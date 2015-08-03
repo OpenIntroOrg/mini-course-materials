@@ -1,0 +1,415 @@
+%%
+%% This is file `shorthnd.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% shorthnd.ins  (with options: `head')
+%% physjour.mbs 
+%% geojour.mbs 
+%% photjour.mbs 
+%% suppjour.mbs 
+%% shorthnd.ins  (with options: `tail')
+%% ===============================================
+%% IMPORTANT NOTICE
+%% See below for the copyright and distribution conditions.
+%% 
+%% This is a generated file.
+%% It may be distributed without the source files listed above.
+%% ===============================================
+%% Copyright 1998, 1999 Patrick W. Daly
+%%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN
+%% archives in directory macros/latex/base/lppl.txt; either
+%% version 1 of the License, or any later version.
+\documentclass{article}
+\usepackage{longtable}
+
+\def\ACRO{\begingroup\catcode`\M=11\relax\catcode`\"=9\relax\acro}
+\def\acro#1#2{\endgroup\ttfamily#1 & \raggedright #2 \tabularnewline}
+\def\PF#1[#2]{\\\hline\multicolumn{2}{c}{File: \texttt{#1}, version: #2
+              \rule[-.75em]{0pt}{2em}}\\\hline\\[-1ex]}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex}
+
+\pagestyle{myheadings}
+\markright{List of Journal Shorthands}
+\begin{document}
+
+\title
+  {List of the Shorthands for Journal Names in Various \texttt{.mbs} Files}
+
+\author{Patrick W. Daly}
+
+\date{This is part of the \texttt{makebst} or \texttt{custom-bib} bundle}
+
+\maketitle
+
+\newcommand{\btx}{\textsc{Bib}\TeX}
+
+The shorthands here may be used in \btx\ database (\texttt{.bib}) files in
+place of the full journal name. For example, instead of
+\begin{verbatim}
+journal = "Phys. Rev.",
+\end{verbatim}
+it is sufficient to give
+\begin{verbatim}
+journal = pr,
+\end{verbatim}
+The advantage of this is not only the convenience of typing a shorter form,
+but also the automatic switching between the abbreviated (here ``Phys.\
+Rev.'')\ and full forms (``Physical Review'') depending on the bibliographic
+style file. Thus the one database entry is reformatted automatically.
+
+There is a set of standard shorthands for computing science included in the
+original \texttt{plain.bst}, \texttt{abbrv.bst}, \texttt{unsrt.bst}, and
+\texttt{alpha.bst} files. These are built into \texttt{merlin.mbs} and are
+always present in every \texttt{.bst} file generated from it.
+
+Whether or not the shorthand is present in your \texttt{.bst} file depends on
+the inclusion of the proper \texttt{.mbs} source file during its creation with
+the \texttt{makebst} program. Check the heading to the \texttt{.bst} file
+to find out what source files went into its generation.
+
+You may make up your own list of journal names, abbreviated and full, by using
+one of the existing \texttt{.mbs} files as a model. Include its name in
+\texttt{shorthnd.ins} to obtain a listing of its shorthands too.
+
+\newpage
+
+\begingroup
+\centering
+\def\PC#1{\ifx#1\ProvidesFile \let\next=#1\else\let\next=\skipline\fi\next}
+\def\skipline{\begingroup\catcode`\^^M=12 \SKPLNE}
+{\catcode`\^^M=12 \endlinechar=-1 \gdef\SKPLNE#1^^M{\endgroup}}
+\let\ProvidesFile=\PF
+\catcode`\%=\active
+\let%=\PC
+\catcode`\M=0
+\begin{longtable}{lp{6cm}}
+ \PF{merlin.mbs}[(all)]
+MACRO {acmcs} {"ACM Computing Surveys"}
+MACRO {acta} {"Acta Informatica"}
+MACRO {cacm} {"Communications of the ACM"}
+MACRO {ibmjrd} {"IBM Journal of Research and Development"}
+MACRO {ibmsj} {"IBM Systems Journal"}
+MACRO {ieeese} {"IEEE Transactions on Software Engineering"}
+MACRO {ieeetc} {"IEEE Transactions on Computers"}
+MACRO {ieeetcad}
+  {"IEEE Transactions on Computer-Aided Design of Integrated Circuits"}
+MACRO {ipl} {"Information Processing Letters"}
+MACRO {jacm} {"Journal of the ACM"}
+MACRO {jcss} {"Journal of Computer and System Sciences"}
+MACRO {scp} {"Science of Computer Programming"}
+MACRO {sicomp} {"SIAM Journal on Computing"}
+MACRO {tocs} {"ACM Transactions on Computer Systems"}
+MACRO {tods} {"ACM Transactions on Database Systems"}
+MACRO {tog} {"ACM Transactions on Graphics"}
+MACRO {toms} {"ACM Transactions on Mathematical Software"}
+MACRO {toois} {"ACM Transactions on Office Information Systems"}
+MACRO {toplas} {"ACM Transactions on Programming Languages and Systems"}
+MACRO {tcs} {"Theoretical Computer Science"}
+ %-------------------------------------------------------------------
+ % Begin module:
+ % \ProvidesFile{physjour.mbs}[2002/01/14 2.2 (PWD)]
+MACRO {aa}{"Astronomy and Astrophysics"}
+MACRO {aasup}{"Astronomy and Astrophysics, Supplement Series"}
+MACRO {aj}{"Astronomical Journal"}
+MACRO {aph} {"Acta Physica"}
+MACRO {advp} {"Advances in Physics"}
+MACRO {ajp} {"American Journal of Physics"}
+MACRO {ajm} {"American Journal of Mathematics"}
+MACRO {amsci} {"American Scientist"}
+MACRO {anofd} {"Annals of Fluid Dynamics"}
+MACRO {am} {"Annals of Mathematics"}
+MACRO {ap} {"Annals of Physics"}
+MACRO {adp} {"Annalen der Physik"}
+MACRO {ao} {"Applied Optics"}
+MACRO {apl} {"Applied Physics Letters"}
+MACRO {app} {"Astroparticle Physics"}
+MACRO {apj} {"Astrophysical Journal"}
+MACRO {apjsup} {"Astrophysical Journal Supplement"}
+MACRO {apss} {"Astrophysics and Space Science"}
+MACRO {araa} {"Annual Review of Astronomy and Astrophysics"}
+MACRO {baas} {"Bulletin of the American Astronomical Society"}
+MACRO {baps} {"Bulletin of the American Physical Society"}
+MACRO {cmp} {"Communications in Mathematical Physics"}
+MACRO {cpam} {"Communications on Pure and Applied Mathematics"}
+MACRO {cppcf} {"Comments on Plasma Physics and Controlled Fusion"}
+MACRO {cpc} {"Computer Physics Communications"}
+MACRO {cqg} {"Classical and Quantum Gravity"}
+MACRO {cra} {"Comptes Rendus des S{\'e}ances de l'Acad{\'e}mie des Sciences A"}
+MACRO {fed} {"Fusion Engineering and Design"}
+MACRO {ft} {"Fusion Technology"}
+MACRO {grg} {"General Relativity and Gravitation"}
+MACRO {ieeens} {"IEEE Transactions on Nuclear Science"}
+MACRO {ieeeps} {"IEEE Transactions on Plasma Science"}
+MACRO {ijimw} {"International Journal of Infrared and Millimeter Waves"}
+MACRO {ip} {"Infrared Physics"}
+MACRO {irp} {"Infrared Physics"}
+MACRO {jap} {"Journal of Applied Physics"}
+MACRO {jasa} {"Journal of the Acoustical Society of America"}
+MACRO {jcp} {"Journal of Computational Physics"}
+MACRO {jetp} {"Soviet Physics--JETP"}
+MACRO {jfe} {"Journal of Fusion Energy"}
+MACRO {jfm} {"Journal of Fluid Mechanics"}
+MACRO {jmp} {"Journal of Mathematical Physics"}
+MACRO {jne} {"Journal of Nuclear Energy"}
+MACRO {jnec} {"Journal of Nuclear Energy, Part C: Plasma Physics, Accelerators, Thermonuclear Research"}
+MACRO {jnm} {"Journal of Nuclear Materials"}
+MACRO {jpc} {"Journal of Physical Chemistry"}
+MACRO {jpp} {"Journal of Plasma Physics"}
+MACRO {jpsj} {"Journal of the Physical Society of Japan"}
+MACRO {jsi} {"Journal of Scientific Instruments"}
+MACRO {jvst} {"Journal of Vacuum Science and Technology"}
+MACRO {nat} {"Nature"}
+MACRO {nature} {"Nature"}
+MACRO {nedf} {"Nuclear Engineering and Design/Fusion"}
+MACRO {nf} {"Nuclear Fusion"}
+MACRO {nim} {"Nuclear Instruments and Methods"}
+MACRO {nimpr} {"Nuclear Instruments and Methods in Physics Research"}
+MACRO {np} {"Nuclear Physics"}
+MACRO {npb} {"Nuclear Physics B"}
+MACRO {nt/f} {"Nuclear Technology/Fusion"}
+MACRO {npbpc} {"Nuclear Physics B (Proceedings Supplements)"}
+MACRO {inc} {"Il Nuovo Cimento"}
+MACRO {nc} {"Nuovo Cimento"}
+MACRO {pf} {"Physics of Fluids"}
+MACRO {pfa} {"Physics of Fluids A: Fluid Dynamics"}
+MACRO {pfb} {"Physics of Fluids B: Plasma Physics"}
+MACRO {pl} {"Physics Letters"}
+MACRO {pla} {"Physics Letters A"}
+MACRO {plb} {"Physics Letters B"}
+MACRO {prep} {"Physics Reports"}
+MACRO {pnas} {"Proceedings of the National Academy of Sciences of the USA"}
+MACRO {pp} {"Physics of Plasmas"}
+MACRO {ppcf} {"Plasma Physics and Controlled Fusion"}
+MACRO {phitrsl} {"Philosophical Transactions of the Royal Society of London"}
+MACRO {prl} {"Physical Review Letters"}
+MACRO {pr} {"Physical Review"}
+MACRO {physrev} {"Physical Review"}
+MACRO {pra} {"Physical Review A"}
+MACRO {prb} {"Physical Review B"}
+MACRO {prc} {"Physical Review C"}
+MACRO {prd} {"Physical Review D"}
+MACRO {pre} {"Physical Review E"}
+MACRO {ps} {"Physica Scripta"}
+MACRO {procrsl} {"Proceedings of the Royal Society of London"}
+MACRO {rmp} {"Reviews of Modern Physics"}
+MACRO {rsi} {"Review of Scientific Instruments"}
+MACRO {science} {"Science"}
+MACRO {sciam} {"Scientific American"}
+MACRO {sam} {"Studies in Applied Mathematics"}
+MACRO {sjpp} {"Soviet Journal of Plasma Physics"}
+MACRO {spd} {"Soviet Physics--Doklady"}
+MACRO {sptp} {"Soviet Physics--Technical Physics"}
+MACRO {spu} {"Soviet Physics--Uspeki"}
+MACRO {st} {"Sky and Telescope"}
+ % End module: physjour.mbs
+ %-------------------------------------------------------------------
+ % Begin module:
+ % \ProvidesFile{geojour.mbs}[2002/07/10 2.0h (PWD)]
+MACRO {aisr} {"Advances in Space Research"}
+MACRO {ag} {"Annales Geophysic\ae"}
+MACRO {anigeo} {"Annali di Geofisica"}
+MACRO {angl} {"Annals of Glaciology"}
+MACRO {andmet} {"Annalen der Meteorologie"}
+MACRO {andgeo} {"Annales de Geophysique"}
+MACRO {andphy} {"Annales de Physique"}
+MACRO {afmgb} {"Archiv f\^^b{u}r Meteorologie, Geophysik und Bioklimatologie"}
+MACRO {ass}{"Astrophysics and Space Science"}
+MACRO {atph} {"Atm\'osphera"}
+MACRO {aao} {"Atmosphere-Ocean"}
+MACRO {atenv} {"Atmospheric Environment"}
+MACRO {aujag} {"Australian Journal of Agricultural Research"}
+MACRO {aumet} {"Australian Meteorological Magazine"}
+MACRO {blmet} {"Boundary-Layer Meteorology"}
+MACRO {bams} {"Bulletin of the American Meteorological Society"}
+MACRO {cch} {"Climatic Change"}
+MACRO {cdyn} {"Climate Dynamics"}
+MACRO {cbul} {"Climatological Bulletin"}
+MACRO {cap} {"Contributions to Atmospheric Physics"}
+MACRO {dsr} {"Deep-Sea Research"}
+MACRO {dhz} {"Deutsche Hydrographische Zeitschrift"}
+MACRO {dao} {"Dynamics of Atmospheres and Oceans"}
+MACRO {eco} {"Ecology"}
+MACRO {empl}{"Earth, Moon and Planets"}
+MACRO {envres} {"Environmental Research"}
+MACRO {envst} {"Environmental Science and Technology"}
+MACRO {ecms} {"Estuarine and Coastal Marine Science"}
+MACRO {expa}{"Experimental Astronomy"}
+MACRO {geoint} {"Geofisica Internationale"}
+MACRO {geopub} {"Geofysiske Publikasjoner"}
+MACRO {geogeo} {"Geologiya i Geofizika"}
+MACRO {gafd} {"Geophysical and Astrophysical Fluid Dynamics"}
+MACRO {gfd} {"Geophysical Fluid Dynamics"}
+MACRO {geomag} {"Geophysical Magazine"}
+MACRO {georl} {"Geophysical Research Letters"}
+MACRO {grl} {"Geophysical Research Letters"}
+MACRO {ga} {"Geophysica"}
+MACRO {gs} {"Geophysics"}
+MACRO {ieeetap} {"IEEE Transactions on Antennas and Propagation"}
+MACRO {ijawp} {"International Journal of Air and Water Pollution"}
+MACRO {ijc} {"International Journal of Climatology"}
+MACRO {ijrs} {"International Journal of Remote Sensing"}
+MACRO {jam} {"Journal of Applied Meteorology"}
+MACRO {jaot} {"Journal of Atmospheric and Oceanic Technology"}
+MACRO {jatp} {"Journal of Atmospheric and Terrestrial Physics"}
+MACRO {jastp} {"Journal of Atmospheric and Solar-Terrestrial Physics"}
+MACRO {jce} {"Journal of Climate"}
+MACRO {jcam} {"Journal of Climate and Applied Meteorology"}
+MACRO {jcm} {"Journal of Climate Meteorology"}
+MACRO {jcy} {"journal of Climatology"}
+MACRO {jgr} {"Journal of Geophysical Research"}
+MACRO {jga} {"Journal of Glaciology"}
+MACRO {jh} {"Journal of Hydrology"}
+MACRO {jmr} {"Journal of Marine Research"}
+MACRO {jmrj} {"Journal of Meteorological Research, Japan"}
+MACRO {jm} {"Journal of Meteorology"}
+MACRO {jpo} {"Journal of Physical Oceanography"}
+MACRO {jra} {"Journal de Recherches Atmospheriques"}
+MACRO {jaes} {"Journal of the Aeronautical Sciences"}
+MACRO {japca} {"Journal of the Air Pollution Control Association"}
+MACRO {jas} {"Journal of the Atmospheric Sciences"}
+MACRO {jmts} {"Journal of the Marine Technology Society"}
+MACRO {jmsj} {"Journal of Meteorological Society of Japan"}
+MACRO {josj} {"Journal of the Oceanographical Society of Japan"}
+MACRO {jwm} {"Journal of Weather Modification"}
+MACRO {lao} {"Limnology and Oceanography"}
+MACRO {mwl} {"Mariners Weather Log"}
+MACRO {mau} {"Mausam"}
+MACRO {meteor} {"``Meteor'' Forschungsergebnisse"}
+MACRO {map} {"Meteorology and Atmospheric Physics"}
+MACRO {metmag} {"Meteorological Magazine"}
+MACRO {metmon} {"Meteorological Monographs"}
+MACRO {metrun} {"Meteorologische Rundschau"}
+MACRO {metzeit} {"Meteorologische Zeitschrift"}
+MACRO {metgid} {"Meteorologiya i Gidrologiya"}
+MACRO {mwr} {"Monthly Weather Review"}
+MACRO {nwd} {"National Weather Digest"}
+MACRO {nzjmfr} {"New Zealand Journal of Marine and Freshwater Research"}
+MACRO {npg} {"Nonlinear Processes in Geophysics"}
+MACRO {om} {"Oceanography and Meteorology"}
+MACRO {ocac} {"Oceanologica Acta"}
+MACRO {oceanus} {"Oceanus"}
+MACRO {paleoc} {"Paleoceanography"}
+MACRO {pce} {"Physics and Chemistry of the Earth"}
+MACRO {pmg} {"Papers in Meteorology and Geophysics"}
+MACRO {ppom} {"Papers in Physical Oceanography and Meteorology"}
+MACRO {physzeit} {"Physikalische Zeitschrift"}
+MACRO {pps} {"Planetary and Space Science"}
+MACRO {pss} {"Planetary and Space Science"}
+MACRO {pag} {"Pure and Applied Geophysics"}
+MACRO {qjrms} {"Quarterly Journal of the Royal Meteorological Society"}
+MACRO {quatres} {"Quaternary Research"}
+MACRO {rsci} {"Radio Science"}
+MACRO {rse} {"Remote Sensing of the Environment"}
+MACRO {rgeo} {"Reviews of Geophysics"}
+MACRO {rgsp} {"Reviews of Geophysics and Space Physics"}
+MACRO {rdgeo} {"Revista de Geofisica"}
+MACRO {revmeta} {"Revista Meteorologica"}
+MACRO {sgp}{"Surveys in Geophysics"}
+MACRO {sp} {"Solar Phys."}
+MACRO {ssr} {"Space Science Review"}
+MACRO {tellus} {"Tellus"}
+MACRO {tac} {"Theoretical and Applied Climatology"}
+MACRO {tagu} {"Transactions, American Geophysical Union (EOS)"}
+MACRO {wrr} {"Water Resources Research"}
+MACRO {weather} {"Weather"}
+MACRO {wafc} {"Weather and Forecasting"}
+MACRO {ww} {"Weatherwise"}
+MACRO {wmob} {"World Meteorological Organization Bulletin"}
+MACRO {zeitmet} {"Zeitschrift f\^^b{u}r Meteorologie"}
+ % End module: geojour.mbs
+ %-------------------------------------------------------------------
+ % Begin module:
+ % \ProvidesFile{photjour.mbs}[1999/02/24 2.0b (PWD)]
+
+MACRO {appopt} {"Applied Optics"}
+MACRO {bell} {"Bell Systems Technical Journal"}
+MACRO {ell} {"Electronics Letters"}
+MACRO {jasp} {"Journal of Applied Spectroscopy"}
+MACRO {jqe} {"IEEE Journal of Quantum Electronics"}
+MACRO {jlwt} {"Journal of Lightwave Technology"}
+MACRO {jmo} {"Journal of Modern Optics"}
+MACRO {josa} {"Journal of the Optical Society of America"}
+MACRO {josaa} {"Journal of the Optical Society of America~A"}
+MACRO {josab} {"Journal of the Optical Society of America~B"}
+MACRO {jdp} {"Journal de Physique"}
+MACRO {oc} {"Optics Communications"}
+MACRO {ol} {"Optics Letters"}
+MACRO {phtl} {"IEEE Photonics Technology Letters"}
+MACRO {pspie} {"Proceedings of the Society for Photo-Optical Instruments Engineers"}
+MACRO {sse} {"Solid-State Electronics"}
+MACRO {sjot} {"Soviet Journal of Optical Technology"}
+MACRO {sjqe} {"Soviet Journal of Quantum Electronics"}
+MACRO {sleb} {"Soviet Physics--Lebedev Institute Reports"}
+MACRO {stph} {"Soviet Physics--Technical Physics"}
+MACRO {stphl} {"Soviet Technical Physics Letters"}
+MACRO {vr} {"Vision Research"}
+MACRO {zph} {"Zeitschrift f\^^b{u}r Physik"}
+MACRO {zphb} {"Zeitschrift f\^^b{u}r Physik~B"}
+MACRO {zphd} {"Zeitschrift f\^^b{u}r Physik~D"}
+
+MACRO {CLEO} {"Conf. on Lasers and Electro-Optics"}
+MACRO {ASSL} {"Advanced Solid State Lasers"}
+MACRO {OSA}  {"Optical Society of America"}
+ % End module: photjour.mbs
+ %-------------------------------------------------------------------
+ % Begin module:
+ % \ProvidesFile{suppjour.mbs}[1999/02/24 1.1]
+MACRO {cjp} {"Czechoslovak Journal of Physics"}
+MACRO {el} {"Europhysics Letters"}
+MACRO {en} {"Europhysics News"}
+MACRO {fujitsustj} {"FUJITSU Scientific {\&} Technical Journal"}
+MACRO {ieeeed} {"IEEE Transactions on Electron Devices"}
+MACRO {ieeeim} {"IEEE Transactions on Instrumentation and Measurement"}
+MACRO {ieeejqe} {"IEEE Journal of Quantum Electronics"}
+MACRO {ieeem} {"IEEE Transactions on Magnetics"}
+MACRO {ieeeptl} {"IEEE Photonics Technology Letters"}
+MACRO {ieeeuffc} {"IEEE Transactions on Ultrasonics, Ferroelectrics and Frequency Control"}
+MACRO {jem} {"Journal of Electronic Materials"}
+MACRO {jes} {"Journal of the Electrochemical Society"}
+MACRO {jetplett} {"JETP Letters"}
+MACRO {jjap} {"Japanese Journal of Applied Physics"}
+MACRO {jpha} {"Journal of Physics A: Mathematical and General"}
+MACRO {jphb} {"Journal of Physics B: Atomic, Molecular and Optical Physics"}
+MACRO {jphbold} {"Journal of Physics B: Atomic and Molecular Physics"}
+MACRO {jphc} {"Journal of Physics: Condensed Matter"}
+MACRO {jphcold} {"Journal of Physics C: Solid State Physics"}
+MACRO {jphd} {"Journal of Physics D: Applied Physics"}
+MACRO {jvsta} {"Journal of Vacuum Science and Technology A"}
+MACRO {jvstb} {"Journal of Vacuum Science and Technology B"}
+MACRO {me} {"Microelectronic Engineering"}
+MACRO {necrd} {"NEC Research {\&} Development"}
+MACRO {pa} {"Physica A"}
+MACRO {pb} {"Physica B"}
+MACRO {pc} {"Physica C"}
+MACRO {pd} {"Physica D"}
+MACRO {procieee} {"Proceedings of the IEEE"}
+MACRO {procspie} {"Proceedings of the SPIE"}
+MACRO {pssa} {"Physica Status Solidi A"}
+MACRO {pssb} {"Physica Status Solidi B"}
+MACRO {rpp} {"Reports on Progress in Physics"}
+MACRO {sm} {"Synthetic Metals"}
+MACRO {sost} {"Solid State Technology"}
+MACRO {ss} {"Surface Science"}
+MACRO {ssc} {"Solid State Communications"}
+MACRO {sst} {"Semiconductor Science and Technology"}
+MACRO {suplatt} {"Superlattices and Microstructures"}
+MACRO {sust} {"Superconductor Science and Technology"}
+MACRO {znat} {"Zeitschrift f\^^b{u}r Naturforschung"}
+ % End module: suppjour.mbs
+%% Copyright 1998, 1999 Patrick W. Daly
+%%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN
+%% archives in directory macros/latex/base/lppl.txt; either
+%% version 1 of the License, or any later version.
+\end{longtable}
+\endgroup
+\end{document}
+\endinput
+%%
+%% End of file `shorthnd.tex'.

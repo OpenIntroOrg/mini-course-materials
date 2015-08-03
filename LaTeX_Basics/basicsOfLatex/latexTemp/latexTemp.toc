@@ -1,0 +1,34 @@
+\contentsline {section}{\numberline {1}General}{3}
+\contentsline {subsection}{\numberline {1.1}Header section}{3}
+\contentsline {subsection}{\numberline {1.2}Outline}{3}
+\contentsline {subsection}{\numberline {1.3}Paragraphs}{3}
+\contentsline {subsection}{\numberline {1.4}Spacing}{4}
+\contentsline {subsection}{\numberline {1.5}Text}{4}
+\contentsline {subsection}{\numberline {1.6}Macros}{4}
+\contentsline {subsection}{\numberline {1.7}Lists}{4}
+\contentsline {subsection}{\numberline {1.8}Special characters}{5}
+\contentsline {subsection}{\numberline {1.9}verbatim}{5}
+\contentsline {section}{\numberline {2}Tabbing}{5}
+\contentsline {subsection}{\numberline {2.1}Basic tabbing}{5}
+\contentsline {subsection}{\numberline {2.2}Impromptu tabs}{6}
+\contentsline {subsection}{\numberline {2.3}Tabbing example}{6}
+\contentsline {section}{\numberline {3}Tables}{7}
+\contentsline {subsection}{\numberline {3.1}Basic tables}{7}
+\contentsline {subsection}{\numberline {3.2}Captions and referencing}{7}
+\contentsline {subsection}{\numberline {3.3}\texttt {array} environment}{8}
+\contentsline {subsection}{\numberline {3.4}The R package, \texttt {xtable}}{8}
+\contentsline {section}{\numberline {4}Figures}{9}
+\contentsline {subsection}{\numberline {4.1}Basic figures}{9}
+\contentsline {subsection}{\numberline {4.2}Captions and referencing}{9}
+\contentsline {subsection}{\numberline {4.3}Keeping organized}{9}
+\contentsline {section}{\numberline {5}Math}{11}
+\contentsline {subsection}{\numberline {5.1}Math in text}{11}
+\contentsline {subsection}{\numberline {5.2}Equation environment and referencing}{12}
+\contentsline {subsection}{\numberline {5.3}Aligning}{12}
+\contentsline {subsection}{\numberline {5.4}Arrays}{12}
+\contentsline {subsection}{\numberline {5.5}Some benefits of the package \texttt {amsmath}}{13}
+\contentsline {section}{\numberline {6}Practice}{13}
+\contentsline {subsection}{\numberline {6.1}Try it \#1}{13}
+\contentsline {subsection}{\numberline {6.2}Try it \#2}{13}
+\contentsline {subsection}{\numberline {6.3}Try it \#3}{14}
+\contentsline {section}{\numberline {7}Bibliography stuff}{14}
