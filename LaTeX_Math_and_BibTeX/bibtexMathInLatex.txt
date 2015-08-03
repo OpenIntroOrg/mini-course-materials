@@ -1,0 +1,114 @@
+
+
+Math in LaTeX
+	Environments
+		In text with $
+		eqnarray / eqnarray*
+		align / align*
+		Referencing
+		Multiple lines
+	Exponents
+		without curlies
+		with curlies
+	Subscripts
+		without curlies
+		with curlies
+		also with exponent
+	Generally use both Exp & Sub
+	Fractions
+	Roots \sqrt[n]{arg}
+	Sums & Integrals
+		\limits
+		\nolimits
+	Ellipsis (continuation dots)
+		\ldots, \cdots, \vdots, \ddots, \dotfill
+	Symbols
+		Greek letters
+		Calligraphic letters
+		Binary operators
+		Relations
+		\not
+		Arrows
+		Various other
+	Accents
+		\bar
+		\hat & \widehat
+		\tilde & \widetilde
+		\dot
+		\ddot
+		\imath and \jmath
+	Augmenting math text/symbols
+		\mathbf
+		\mathit
+		\mathrm
+		\mathtt
+	Automatic sizing of bracket symbols
+	Text in equations
+		\qquad
+		\mbox
+	Arrays and matrices
+		array environment
+	Lines and Braces over/under
+		\overline
+		\underline
+		\overbrace{}^{}
+		\underbrace{}_{}
+	Stacked symbols with \stackrel
+	\atop
+		
+
+BibTeX
+	Example
+		natbib
+		
+		Built BibTeX file
+		Citations
+		Compiling
+	Building a Bibliography
+		BibDesk
+		Format
+		Options
+	Citations
+		Active
+		Passive
+		No citation
+	Compiling the bibliography
+		How to
+	Bibliography styles
+		program
+
+
+Style in LaTeX
+	For the remainder, we closely follow Ch 10 in "Guide to LaTeX"
+	Counters
+		Original
+		Creating
+		Adjusting
+		Printing
+	User defined commands
+		newcommand / renewcommand
+		\bluesigma (no arguments)
+		\FRAC (with arguments)
+		\avec (with arguments)
+	User defined environments
+		newenvrionment
+		renewenvrionemnt
+		example
+		exercise
+	Example: Figure/Table numbering
+		Provide commands for one numbering system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

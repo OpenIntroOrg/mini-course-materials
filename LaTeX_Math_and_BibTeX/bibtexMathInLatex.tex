@@ -1,0 +1,106 @@
+\documentclass[slidestop,compress,mathserif]{beamer}
+\usetheme{Frankfurt}
+\usecolortheme{seagull}
+
+% Load packages
+\usepackage{alltt}
+\usepackage{verbatim}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{verbatim}
+%\usepackage{musixtex}
+%\usepackage{xymtexps}
+\usepackage{feynmp}
+
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,landscape,border shrink=5mm]
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+
+% Title 
+% Note: [short title]{long title}, [short author(s) name]{long author(s) name}
+\title{Intro to LaTeX, Part II: \\Math, BibTeX, and Customization}
+\subtitle{}
+\author{David Diez} 
+\institute{OpenIntro \\ \href{http://www.openintro.org}{openintro.org}}
+\date{}
+
+\begin{document}
+\definecolor{highlight}{rgb}{.7,.1,.1}
+\definecolor{command}{rgb}{.1,.1,.9}
+\definecolor{comment}{rgb}{1,0,0}
+\definecolor{braces}{rgb}{0,0.5,0}
+\newenvironment{act}[1]{{\color{command}#1}}{}
+\newcommand{\lcom}[1]{{\color{command}$\backslash$#1}}
+\newcommand{\larg}[1]{{\color{braces}$\{${\color{black}#1}$\}$}}
+\newcommand{\mathText}[1]{{\color{braces}\${\color{black}#1}\$}}
+
+
+\frame{ \titlepage }
+
+\begin{frame}
+  \frametitle{Outline}
+  \begin{itemize}
+  \item Mathematics in LaTeX
+  \item BibTeX: bibliographies in LaTeX
+  \item Building your own commands and environments
+  \item Miscellaneous tips
+  \end{itemize}
+\end{frame}
+
+\begin{frame}  \frametitle{Guide to LaTeX}
+The book \textit{Guide to LaTeX} offers a very nice introduction, and we will closely follow some of the examples in these chapters in this class:
+\begin{itemize}
+\item[7] math
+\item[11,12] BibTeX, and
+\item[10] custom commands and environments.
+\end{itemize}
+%If you are looking for a LaTeX resource, \textit{Guide to LaTeX} is a good choice.
+\end{frame}
+
+\part{}
+
+\include{math/math}
+\include{bibtex/bibtex}
+\include{comenv/comenv}
+
+\section[Wrap-up]{Wrap-up}
+\subsection[Wrap-up]{Wrap-up}
+
+\begin{frame}  \frametitle{Organizer and time saver}
+The {\color{command}$\backslash$include} command is useful for long documents:
+\vspace{1mm} \\
+\begin{itemize}
+\item[] {\color{command}$\backslash$include}{\color{braces}$\{${\color{black}otherDocName}$\}$}
+\end{itemize}
+\vspace{1mm}
+For instance, this presentation actually calls three separate documents: one for each big section. Thus I would not take time Typesetting parts of the document I was not working on while keeping organized:
+\vspace{1mm} \\
+\begin{itemize}
+\item[] \lcom{include}\larg{math/math} {\color{red}\% ``math'' document in the ``math'' folder}
+\item[] {\color{red}\%$\backslash$include$\{${bibtex/bibtex}$\}$}
+\item[] {\color{red}\%$\backslash$include$\{${comenv/comenv}$\}$}
+\end{itemize}
+\end{frame}
+
+\begin{frame}  \frametitle{Wrap-up}
+After this class, you should have a general idea of
+\vspace{1mm} \\
+\begin{itemize}
+\item using the math modes in LaTeX,
+\item creating bibliographies using BibTeX, and
+\item creating your own commands and environments.
+\end{itemize}
+\vspace{1mm}
+Any questions?
+\end{frame}
+
+
+
+
+
+\end{document}

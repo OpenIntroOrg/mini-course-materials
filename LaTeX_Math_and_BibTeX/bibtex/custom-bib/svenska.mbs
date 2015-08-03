@@ -1,0 +1,304 @@
+%\iffalse         THIS IS A META COMMENT
+% File: svenska.mbs
+% Copyright 1995-1999 Patrick W Daly
+% Max-Planck-Institut f\"ur Sonnensystemforschung
+% Max-Planck-Str. 2
+% D-37191 Katlenburg-Lindau
+% Germany
+% E-mail: daly@mps.mpg.de
+%
+% Swedish translations by Erik \"{O}sthols
+%
+% This program can be redistributed and/or modified under the terms
+% of the LaTeX Project Public License Distributed from CTAN
+% archives in directory macros/latex/base/lppl.txt; either
+% version 1 of the License, or any later version.
+%
+% It is part of the custom-bib collection,
+%   a contribution to the LaTeX2e system.
+%====================================================================
+%       A Language Definition File:  SWEDISH
+%     to be included with other master bibliography style files
+%--------------------------------------------------------------------
+%   (See version and date in the \ProvidesFile command below)
+%--------------------------------------------------------------------
+%    This file is self-documenting: simply LaTeX it!
+%====================================================================
+%
+ %-------------------------------------------------------------------
+ % Begin module:
+%\fi
+ % \ProvidesFile{svenska.mbs}[2008/08/15  (EO)]
+%\iffalse
+%<*a&!a>
+% The following ensures that the driver part is not seen by makebst
+% The driver part must not contain any \end other than \end{document} !
+\ifx\endoptions\undefined\let\tempx=\relax\else
+  \long\def\tempx#1\end#2{}\fi\tempx
+%</a&!a>
+%<*driver>
+   \NeedsTeXFormat{LaTeX2e}%
+   \documentclass[a4paper,10pt,twoside]{article}%
+   \usepackage{doc}%
+   \raggedbottom
+   \CodelineNumbered
+   \RecordChanges
+ %  Comment out next line to print coding
+   \OnlyDescription
+   \setlength{\oddsidemargin}{0.5\paperwidth}
+   \addtolength{\oddsidemargin}{-0.5\textwidth}
+   \addtolength{\oddsidemargin}{-1in}
+   \setlength{\evensidemargin}{\oddsidemargin}
+
+\begin{document}
+   \DocInput{svenska.mbs}
+\end{document}
+%</driver>
+%                   END OF META COMMENT   \fi
+% \CharacterTable
+%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%   Digits        \0\1\2\3\4\5\6\7\8\9
+%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%   Dollar        \$     Percent       \%     Ampersand     \&
+%   Acute accent  \'     Left paren    \(     Right paren   \)
+%   Asterisk      \*     Plus          \+     Comma         \,
+%   Minus         \-     Point         \.     Solidus       \/
+%   Colon         \:     Semicolon     \;     Less than     \<
+%   Equals        \=     Greater than  \>     Question mark \?
+%   Commercial at \@     Left bracket  \[     Backslash     \\
+%   Right bracket \]     Circumflex    \^     Underscore    \_
+%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%   Right brace   \}     Tilde         \~}
+%
+% \setcounter{StandardModuleDepth}{1}
+% \setcounter{IndexColumns}{2}
+% \setlength{\IndexMin}{10cm}
+%
+% \changes{1.0}{2008 Aug 15}{First version, converted from dansk.mbs}
+%
+% \markboth{Erik {\"{O}}sthols}{Swedish bibliographies}
+%
+% \title{{\bfseries Swedish Language Definition File}\\
+%      for master bibliographic style files}
+%
+% \author{Patrick W. Daly}
+%
+% \GetFileInfo{svenska.mbs}
+% \date{This paper describes file \texttt{\filename},\\
+%  version \fileversion{} from \filedate}
+%
+% \maketitle
+%
+% \MakeShortVerb{\|}
+%
+% \parskip=1ex \parindent=0pt
+%
+% \newcommand{\btx}{{\sc Bib}\TeX}
+% \newcommand{\dtx}{\textsf{docstrip}}
+%
+% \section{Introduction}
+% This file is to be used as a language definition file with master
+% bibliographic files. The language it defines is
+% \begin{quote}\bfseries Svenska\end{quote}
+%
+% This is not a self-sufficient \texttt{.mbs} file, but rather may
+% be used together with one that contains language support via
+% external definition files.
+%
+% See the documentation for \texttt{makebst} for formatting details.
+%
+% \section{The Menu Information}
+%
+% All the menu information is nested between \dtx{} guard options
+% |%<*options>| \dots\ |%</options>|, and the last command is
+% |\endoptions|. The rest of the file is nested between |%<*!options&!driver>|
+% \dots\ |%</!options&!driver>| in order to exclude it if \dtx{} is used to
+% extract only the menu information or the documentation driver.
+%
+%    \begin{macrocode}
+%<*options>
+\mes{^^JOptions for SVENSKA}
+\wr{\spsp\spsp svenska,\pc: Swedish language}
+
+\beginoptiongroup{ABBREVIATE WORD `PAGES':}{}
+\optdef{*}{}{`Sidan'}{(no abbreviation)}
+\optdef{a}{pp}{`Sidan' abbreviated}{as s. or ss.}
+\optdef{x}{ppx}{`Sidan' omitted}{}
+\getans
+\endoptiongroup
+\beginoptiongroup{ABBREVIATE WORD `EDITORS':}{}
+\optdef{*}{}{`Redakt\string\"or(er)'}{(no abbreviation)}
+\optdef{a}{ed}{`Redakt\string\"or' abbreviated}{as red.}
+\getans
+\endoptiongroup
+\beginoptiongroup{OTHER ABBREVIATIONS:}{}
+\optdef{*}{}{No abbreviations}{of volym, utg\string\a{a}va, kapitel, o.s.v.}
+\optdef{a}{abr}{Abbreviations}{of such words}
+\getans
+\endoptiongroup
+\beginoptiongroup{EDITION NUMBERS:}{}
+\optdef{*}{xedn}{Editions as in database}{saving much processing memory}
+\optdef{w}{}{Write out editions}{as f\string\"orsta, andra, tredje, o.s.v.}
+\optdef{n}{ord}{Numerical editions}{as 1:a, 2:a, 3:e, osv}
+\getans
+\endoptiongroup
+\endoptions
+%</options>
+%    \end{macrocode}
+%
+% \StopEventually{\PrintChanges}
+%
+% \section{The Coding}
+%    \begin{macrocode}
+%<*!options&!driver>
+
+ % The language selected here is SWEDISH
+
+FUNCTION {bbl.and}
+{ "och"}
+
+FUNCTION {bbl.etal}
+{ "et~al." }
+
+FUNCTION {bbl.editors}
+%<!ed>{ "redakt{\^^b{o}}rer" }
+%<ed>{ "red." }
+
+FUNCTION {bbl.editor}
+%<!ed>{ "redakt{\^^b{o}}r" }
+%<ed>{ "red." }
+
+FUNCTION {bbl.edby}
+{ "redigerad av" }
+
+FUNCTION {bbl.edition}
+%<!abr>{ "utg{\a{a}}va" }
+%<abr>{ "utg." }
+
+FUNCTION {bbl.volume}
+%<!abr>{ "volym" }
+%<abr>{ "vol." }
+
+FUNCTION {bbl.of}
+{ "av" }
+
+FUNCTION {bbl.number}
+%<!abr>{ "nummer" }
+%<abr>{ "nr." }
+
+FUNCTION {bbl.nr}
+{ "nr." }
+
+FUNCTION {bbl.in}
+{ "i" }
+
+FUNCTION {bbl.pages}
+%<!pp&!ppx>{ "sidorna" }
+%<pp>{ "ss." }
+%<!pp&ppx>{ "" }
+
+FUNCTION {bbl.page}
+%<!pp&!ppx>{ "sidan" }
+%<pp>{ "s." }
+%<!pp&ppx>{ "" }
+
+%<*revdata>
+FUNCTION {bbl.eidpp}
+{ "sidor" }
+
+%</revdata>
+FUNCTION {bbl.chapter}
+%<!abr>{ "kapitel" }
+%<abr>{ "kap." }
+
+FUNCTION {bbl.techrep}
+%<!abr>{ "Teknisk rapport" }
+%<abr>{ "Tekn. rapp." }
+
+FUNCTION {bbl.mthesis}
+{ "Examensarbete" }
+
+FUNCTION {bbl.phdthesis}
+{ "Doktorsavhandling" }
+
+%<*!xedn>
+FUNCTION {bbl.first}
+%<!ord>{ "F{\^^b{o}}rsta" }
+%<ord>{ "1:a" }
+
+FUNCTION {bbl.second}
+%<!ord>{ "Andra" }
+%<ord>{ "2." }
+
+FUNCTION {bbl.third}
+%<!ord>{ "Tredje" }
+%<ord>{ "3." }
+
+FUNCTION {bbl.fourth}
+%<!ord>{ "Fj{\^^b{a}}rde" }
+%<ord>{ "4:e" }
+
+FUNCTION {bbl.fifth}
+%<!ord>{ "Femte" }
+%<ord>{ "5:e" }
+
+FUNCTION {bbl.th}
+{ ":e" }
+%</!xedn>
+%<*!abr>
+MACRO {jan} {"januari"}
+
+MACRO {feb} {"februari"}
+
+MACRO {mar} {"mars"}
+
+MACRO {apr} {"april"}
+
+MACRO {may} {"maj"}
+
+MACRO {jun} {"juni"}
+
+MACRO {jul} {"juli"}
+
+MACRO {aug} {"augusti"}
+
+MACRO {sep} {"september"}
+
+MACRO {oct} {"oktober"}
+
+MACRO {nov} {"november"}
+
+MACRO {dec} {"december"}
+
+%</!abr>
+%<*abr>
+MACRO {jan} {"jan."}
+
+MACRO {feb} {"feb."}
+
+MACRO {mar} {"mar."}
+
+MACRO {apr} {"apr."}
+
+MACRO {may} {"maj"}
+
+MACRO {jun} {"jun."}
+
+MACRO {jul} {"jul."}
+
+MACRO {aug} {"aug."}
+
+MACRO {sep} {"sep."}
+
+MACRO {oct} {"okt."}
+
+MACRO {nov} {"nov."}
+
+MACRO {dec} {"dec."}
+
+%</abr>
+%</!options&!driver>
+ % End module: svenska.mbs
+%    \end{macrocode}
+% \Finale
